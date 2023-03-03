@@ -1,9 +1,8 @@
 import {useEffect, useState} from "react";
-
 const Theme = ({children}) => {
 
     const [colorMode, setColorMode] = useState('root')
-    const [darkMode, setDarkMode] = useState('-light')
+    const [darkMode, setDarkMode] = useState( '')
     const [theme, setTheme] = useState({color: `${colorMode + darkMode}`, mode: `${darkMode}`})
     const handleColorMode = (color) => {
         const value = color
@@ -13,6 +12,18 @@ const Theme = ({children}) => {
         const value = mode
         setDarkMode(value)
     }
+
+    useEffect(() => {
+        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setDarkMode(() => {
+
+            const value = prefersDarkMode ? "-dark" : "-light"
+            return value
+        })
+
+    }, []);
+
+
 
     useEffect(() => {
 
@@ -26,9 +37,9 @@ const Theme = ({children}) => {
     return (
         <div className={`${theme.mode} ${theme.color}`}>
             <div className={'bg-skin-theme-body-50'}>
-                <div className="flex flex-col gap-2 w-full flex-wrap p-2">
+                <div className="flex flex-col gap-2 w-full flex-wrap p-2 max-w-screen-tablet mx-auto">
 
-                    <div className="flex flex-row gap-2 justify-between w-full flex-wrap flex-wrap-reverse text-xs">
+                    <div className="flex flex-row gap-2 justify-between w-full flex-wrap flex-wrap-reverse text-xs ">
 
                         {/* ROOT _ SECOND _ THIRD */}
                         <div className="flex flex-row gap-2">
