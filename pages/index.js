@@ -23,7 +23,7 @@ export default function Home() {
             </div>
             <div className={'grid grid-cols-1 grid-rows-1 tablet:grid-cols-2 tablet:gap-8 gap-4 pt-2 py-6'}>
                 <div
-                    className={'bg-skin-theme-body-100/40 border border-skin-theme-body-900 rounded-sm text-skin-theme-font-50 mx-auto'}>
+                    className={'bg-skin-theme-body-100/40 border border-skin-theme-body-600/40 rounded-sm text-skin-theme-font-50 mx-auto'}>
                     <div className={'flex flex-col justify-center gap-3 px-1 py-4 max-w-screen-smPhone'}>
                         <h2 className={'text-2xl text-skin-theme-500 font-semibold text-center w-full px-12'}>Starter</h2>
                         <h3 className={'text-lg text-center w-full px-12'}>Best option for
@@ -50,7 +50,7 @@ export default function Home() {
                 </div>
 
                 <div
-                    className={'bg-skin-theme-body-100/40 border border-skin-theme-body-900 rounded-sm text-skin-theme-font-50 mx-auto'}>
+                    className={'bg-skin-theme-body-100/40 border border-skin-theme-body-600/40 rounded-sm text-skin-theme-font-50 mx-auto'}>
                     <div className={'flex flex-col justify-center gap-3 px-1 py-4 max-w-screen-smPhone'}>
                         <h2 className={'text-2xl text-skin-theme-500 font-semibold text-center w-full px-12'}>Enterprise</h2>
                         <h3 className={'text-lg text-center w-full px-12'}>Best for large scale uses and extended redistribution rights.</h3>
