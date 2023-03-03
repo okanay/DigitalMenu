@@ -1,0 +1,15 @@
+{
+    "title" : "Color Theme",
+    "theme" : {
+        "root" : "Blue",
+        "second" : "Green",
+        "third" : "Violet",
+        "fourth" : "Red",
+        "fifth" : "Sand",
+        "sixth" : "Pink"
+    },
+    "mode" : {
+        "light" : "Light",
+        "dark" : "Dark"
+    }
+}

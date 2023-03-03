@@ -1,0 +1,15 @@
+{
+  "title" : "Renk Temasi",
+  "theme" : {
+    "root" : "Mavi",
+    "second" : "Yeşil",
+    "third" : "Menekşe",
+    "fourth" : "Kırmızı",
+    "fifth" : "Kum",
+    "sixth" : "Pembe"
+  },
+  "mode" : {
+    "light" : "Açık",
+    "dark" : "Kapalı"
+  }
+}
