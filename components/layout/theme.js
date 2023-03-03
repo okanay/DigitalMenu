@@ -4,7 +4,7 @@ const Theme = ({children}) => {
 
 
     const [colorMode, setColorMode] = useState('root')
-    const [darkMode, setDarkMode] = useState('-dark')
+    const [darkMode, setDarkMode] = useState('-light')
     const [theme, setTheme] = useState({color: `${colorMode + darkMode}`, mode: `${darkMode}`})
 
     const handleColorMode = (color) => {
