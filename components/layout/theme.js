@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 
-const Theme = ({children, t, i18n}) => {
+const Theme = ({children}) => {
 
     const [colorMode, setColorMode] = useState('root')
     const [darkMode, setDarkMode] = useState('-light')
@@ -12,9 +12,6 @@ const Theme = ({children, t, i18n}) => {
     const handleDarkMode = (mode) => {
         const value = mode
         setDarkMode(value)
-    }
-    const handleLanguage = (lan) => {
-        i18n.changeLanguage(lan)
     }
 
     useEffect(() => {
@@ -40,7 +37,7 @@ const Theme = ({children, t, i18n}) => {
                                     handleColorMode('root')
                                 }}
                                 className={`${darkMode === "-light" ? "root-light" : "root-dark"} hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
-                                {t('common:theme.root')}
+                                Root
                             </button>
 
                             <button
@@ -48,7 +45,7 @@ const Theme = ({children, t, i18n}) => {
                                     handleColorMode('second')
                                 }}
                                 className={`${darkMode === "-light" ? "second-light" : "second-dark"}  hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
-                                {t('common:theme.second')}
+                                Second
                             </button>
 
                             <button
@@ -56,7 +53,7 @@ const Theme = ({children, t, i18n}) => {
                                     handleColorMode('third')
                                 }}
                                 className={`${darkMode === "-light" ? "third-light" : "third-dark"} hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
-                                {t('common:theme.third')}
+                                Third
                             </button>
                         </div>
 
@@ -68,7 +65,7 @@ const Theme = ({children, t, i18n}) => {
                                     handleDarkMode('-light')
                                 }}
                                 className={'-light px-4 py-2 rounded text-skin-theme-font-50 bg-skin-theme-body-50 hover:bg-skin-theme-body-100/80 border border-skin-theme-body-900'}>
-                                {t('common:mode.light')}
+                                Light
                             </button>
 
                             <button
@@ -76,7 +73,7 @@ const Theme = ({children, t, i18n}) => {
                                     handleDarkMode('-dark')
                                 }}
                                 className={'-dark px-4 py-2 rounded text-skin-theme-font-50 bg-skin-theme-body-50 hover:bg-skin-theme-body-100/80 border border-skin-theme-body-900'}>
-                                {t('common:mode.dark')}
+                                Dark
                             </button>
                         </div>
 
@@ -91,7 +88,7 @@ const Theme = ({children, t, i18n}) => {
                                     handleColorMode('fourth')
                                 }}
                                 className={`${darkMode === "-light" ? "fourth-light" : "fourth-dark"} hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
-                                {t('common:theme.fourth')}
+                                Fourth
                             </button>
 
                             <button
@@ -99,7 +96,7 @@ const Theme = ({children, t, i18n}) => {
                                     handleColorMode('fifth')
                                 }}
                                 className={`${darkMode === "-light" ? "fifth-light" : "fifth-dark"}  hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
-                                {t('common:theme.fifth')}
+                                Fifth
                             </button>
 
                             <button
@@ -107,29 +104,11 @@ const Theme = ({children, t, i18n}) => {
                                     handleColorMode('sixth')
                                 }}
                                 className={`${darkMode === "-light" ? "sixth-light" : "sixth-dark"}  hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
-                                {t('common:theme.sixth')}
+                                Sixth
                             </button>
 
                         </div>
 
-                        {/* LANGUAGES */}
-                        <div className="flex flex-row gap-2">
-                            <button
-                                onClick={() => {
-                                    handleLanguage('tr')
-                                }}
-                                className={`px-4 py-2 rounded ${i18n.resolvedLanguage === 'tr' ? "text-skin-theme-font-900 bg-skin-theme-500 border-skin-theme-400/60 hover:bg-skin-theme-500/80" : "text-skin-theme-font-50 bg-skin-theme-body-50 border-skin-theme-body-900 hover:bg-skin-theme-body-200/80"}  border`}>
-                            TR
-                            </button>
-
-                            <button
-                                onClick={() => {
-                                    handleLanguage('en')
-                                }}
-                                className={`px-4 py-2 rounded ${i18n.resolvedLanguage === 'en' ? "text-skin-theme-font-900 bg-skin-theme-500 border-skin-theme-400/60 hover:bg-skin-theme-500/80" : "text-skin-theme-font-50 bg-skin-theme-body-50 border-skin-theme-body-900 hover:bg-skin-theme-body-200/80 "} border`}>
-                                ENG
-                            </button>
-                        </div>
                     </div>
             </div>
                  {children}

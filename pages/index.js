@@ -1,15 +1,12 @@
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
-import {useTranslation} from "next-i18next";
-
 export default function Home() {
 
-    const { t, i18n } = useTranslation('common')
+
 
     return (
         <div className={`flex flex-col justify-center w-full px-4 py-2`}>
 
             <div className={`flex flex-col justify-start w-full gap-2 pb-12 bg-skin-theme-body-50`}>
-                <h1 className={'text-3xl text-skin-theme-500 font-bold text-start'}>{t('common:title')}</h1>
+                <h1 className={'text-3xl text-skin-theme-500 font-bold text-start'}>Color Theme</h1>
                 <p className={'text-sm text-skin-theme-font-50 font-semibold'}>Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. A accusantium dolor dolorem doloremque
                     explicabo praesentium veritatis! Eos et ex exercitationem illo nam perspiciatis quia, quos ratione
@@ -25,8 +22,7 @@ export default function Home() {
                 </div>
             </div>
             <div className={'grid grid-cols-1 grid-rows-1 tablet:grid-cols-2 tablet:gap-8 gap-4 pt-2 py-6'}>
-                <div
-                    className={'bg-skin-theme-body-100/40 border border-skin-theme-body-600/40 rounded-sm text-skin-theme-font-50 mx-auto'}>
+                <div className={'bg-skin-theme-body-100/40 border border-skin-theme-body-600/40 rounded-sm text-skin-theme-font-50 mx-auto'}>
                     <div className={'flex flex-col justify-center gap-3 px-1 py-4 max-w-screen-smPhone'}>
                         <h2 className={'text-2xl text-skin-theme-500 font-semibold text-center w-full px-12'}>Starter</h2>
                         <h3 className={'text-lg text-center w-full px-12'}>Best option for
@@ -51,9 +47,7 @@ export default function Home() {
 
                     </div>
                 </div>
-
-                <div
-                    className={'bg-skin-theme-body-100/40 border border-skin-theme-body-600/40 rounded-sm text-skin-theme-font-50 mx-auto'}>
+                <div className={'bg-skin-theme-body-100/40 border border-skin-theme-body-600/40 rounded-sm text-skin-theme-font-50 mx-auto'}>
                     <div className={'flex flex-col justify-center gap-3 px-1 py-4 max-w-screen-smPhone'}>
                         <h2 className={'text-2xl text-skin-theme-500 font-semibold text-center w-full px-12'}>Enterprise</h2>
                         <h3 className={'text-lg text-center w-full px-12'}>Best for large scale uses and extended redistribution rights.</h3>
@@ -84,14 +78,4 @@ export default function Home() {
 }
 
 
-export async function getStaticProps({ locale }) {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, [
-                'common',
-                'home',
-            ])),
-        },
-    }
-}
 
