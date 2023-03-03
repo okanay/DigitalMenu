@@ -5,7 +5,6 @@ const Theme = ({children, t, i18n}) => {
     const [colorMode, setColorMode] = useState('root')
     const [darkMode, setDarkMode] = useState('-light')
     const [theme, setTheme] = useState({color: `${colorMode + darkMode}`, mode: `${darkMode}`})
-
     const handleColorMode = (color) => {
         const value = color
         setColorMode(value)
@@ -14,7 +13,6 @@ const Theme = ({children, t, i18n}) => {
         const value = mode
         setDarkMode(value)
     }
-
     const handleLanguage = (lan) => {
         i18n.changeLanguage(lan)
     }
@@ -33,7 +31,7 @@ const Theme = ({children, t, i18n}) => {
             <div className={'bg-skin-theme-body-50'}>
                 <div className="flex flex-col gap-2 w-full flex-wrap p-2">
 
-                    <div className="flex flex-row gap-2 justify-between w-full flex-wrap flex-wrap-reverse">
+                    <div className="flex flex-row gap-2 justify-between w-full flex-wrap flex-wrap-reverse text-xs">
 
                         {/* ROOT _ SECOND _ THIRD */}
                         <div className="flex flex-row gap-2">
@@ -41,7 +39,7 @@ const Theme = ({children, t, i18n}) => {
                                 onClick={() => {
                                     handleColorMode('root')
                                 }}
-                                className={`${darkMode === "-light" ? "root-light" : "root-dark"} hover:bg-skin-theme-body-100/80 text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
+                                className={`${darkMode === "-light" ? "root-light" : "root-dark"} hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
                                 {t('common:theme.root')}
                             </button>
 
@@ -49,7 +47,7 @@ const Theme = ({children, t, i18n}) => {
                                 onClick={() => {
                                     handleColorMode('second')
                                 }}
-                                className={`${darkMode === "-light" ? "second-light" : "second-dark"}  hover:bg-skin-theme-body-100/80 text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
+                                className={`${darkMode === "-light" ? "second-light" : "second-dark"}  hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
                                 {t('common:theme.second')}
                             </button>
 
@@ -57,7 +55,7 @@ const Theme = ({children, t, i18n}) => {
                                 onClick={() => {
                                     handleColorMode('third')
                                 }}
-                                className={`${darkMode === "-light" ? "third-light" : "third-dark"} hover:bg-skin-theme-body-100/80 text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
+                                className={`${darkMode === "-light" ? "third-light" : "third-dark"} hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
                                 {t('common:theme.third')}
                             </button>
                         </div>
@@ -69,7 +67,7 @@ const Theme = ({children, t, i18n}) => {
                                 onClick={() => {
                                     handleDarkMode('-light')
                                 }}
-                                className={'-light text-sm px-4 py-2 rounded text-skin-theme-font-50 bg-skin-theme-body-50 hover:bg-skin-theme-body-100/80 border border-skin-theme-body-900'}>
+                                className={'-light px-4 py-2 rounded text-skin-theme-font-50 bg-skin-theme-body-50 hover:bg-skin-theme-body-100/80 border border-skin-theme-body-900'}>
                                 {t('common:mode.light')}
                             </button>
 
@@ -77,7 +75,7 @@ const Theme = ({children, t, i18n}) => {
                                 onClick={() => {
                                     handleDarkMode('-dark')
                                 }}
-                                className={'-dark text-sm px-4 py-2 rounded text-skin-theme-font-50 bg-skin-theme-body-50 hover:bg-skin-theme-body-100/80 border border-skin-theme-body-900'}>
+                                className={'-dark px-4 py-2 rounded text-skin-theme-font-50 bg-skin-theme-body-50 hover:bg-skin-theme-body-100/80 border border-skin-theme-body-900'}>
                                 {t('common:mode.dark')}
                             </button>
                         </div>
@@ -85,14 +83,14 @@ const Theme = ({children, t, i18n}) => {
                     </div>
 
                     {/* FOURTH _ FIFTH _ SIXTH */}
-                    <div className="flex flex-row gap-2 justify-between w-full flex-wrap flex-wrap-reverse">
+                    <div className="flex flex-row gap-2 justify-between w-full flex-wrap flex-wrap text-xs">
 
                         <div className="flex flex-row gap-2">
                             <button
                                 onClick={() => {
                                     handleColorMode('fourth')
                                 }}
-                                className={`${darkMode === "-light" ? "fourth-light" : "fourth-dark"} hover:bg-skin-theme-body-100/80 text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
+                                className={`${darkMode === "-light" ? "fourth-light" : "fourth-dark"} hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
                                 {t('common:theme.fourth')}
                             </button>
 
@@ -100,7 +98,7 @@ const Theme = ({children, t, i18n}) => {
                                 onClick={() => {
                                     handleColorMode('fifth')
                                 }}
-                                className={`${darkMode === "-light" ? "fifth-light" : "fifth-dark"}  hover:bg-skin-theme-body-100/80 text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
+                                className={`${darkMode === "-light" ? "fifth-light" : "fifth-dark"}  hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
                                 {t('common:theme.fifth')}
                             </button>
 
@@ -108,7 +106,7 @@ const Theme = ({children, t, i18n}) => {
                                 onClick={() => {
                                     handleColorMode('sixth')
                                 }}
-                                className={`${darkMode === "-light" ? "sixth-light" : "sixth-dark"}  hover:bg-skin-theme-body-100/80 text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
+                                className={`${darkMode === "-light" ? "sixth-light" : "sixth-dark"}  hover:bg-skin-theme-body-100/80 px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
                                 {t('common:theme.sixth')}
                             </button>
 
@@ -120,7 +118,7 @@ const Theme = ({children, t, i18n}) => {
                                 onClick={() => {
                                     handleLanguage('tr')
                                 }}
-                                className={`text-sm px-4 py-2 rounded ${i18n.resolvedLanguage === 'tr' ? "text-skin-theme-font-900 bg-skin-theme-500 border-skin-theme-400/60 hover:bg-skin-theme-500/80" : "text-skin-theme-font-50 bg-skin-theme-body-50 border-skin-theme-body-900 hover:bg-skin-theme-body-200/80"}  border`}>
+                                className={`px-4 py-2 rounded ${i18n.resolvedLanguage === 'tr' ? "text-skin-theme-font-900 bg-skin-theme-500 border-skin-theme-400/60 hover:bg-skin-theme-500/80" : "text-skin-theme-font-50 bg-skin-theme-body-50 border-skin-theme-body-900 hover:bg-skin-theme-body-200/80"}  border`}>
                             TR
                             </button>
 
@@ -128,7 +126,7 @@ const Theme = ({children, t, i18n}) => {
                                 onClick={() => {
                                     handleLanguage('en')
                                 }}
-                                className={`text-sm px-4 py-2 rounded ${i18n.resolvedLanguage === 'en' ? "text-skin-theme-font-900 bg-skin-theme-500 border-skin-theme-400/60 hover:bg-skin-theme-500/80" : "text-skin-theme-font-50 bg-skin-theme-body-50 border-skin-theme-body-900 hover:bg-skin-theme-body-200/80 "} border`}>
+                                className={`px-4 py-2 rounded ${i18n.resolvedLanguage === 'en' ? "text-skin-theme-font-900 bg-skin-theme-500 border-skin-theme-400/60 hover:bg-skin-theme-500/80" : "text-skin-theme-font-50 bg-skin-theme-body-50 border-skin-theme-body-900 hover:bg-skin-theme-body-200/80 "} border`}>
                                 ENG
                             </button>
                         </div>
