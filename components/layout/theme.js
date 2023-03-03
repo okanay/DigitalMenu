@@ -40,7 +40,6 @@ const Theme = ({children}) => {
                         Root
                     </button>
 
-
                     <button
                         onClick={() => {
                             handleColorMode('second')
@@ -73,6 +72,13 @@ const Theme = ({children}) => {
                         Fifth
                     </button>
 
+                    <button
+                        onClick={() => {
+                            handleColorMode('sixth')
+                        }}
+                        className={`${darkMode === "-light" ? "sixth-light" : "sixth-dark"}  hover:bg-skin-theme-body-100/80 text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
+                        Sixth
+                    </button>
 
 
                 </div>
