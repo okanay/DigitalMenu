@@ -3,9 +3,9 @@ import {useEffect, useState} from "react";
 export default function Home() {
 
     return (
-        <div className={`mx-auto max-w-screen-tablet mx-auto flex flex-col justify-start px-4`}>
+        <div className={`flex flex-col justify-center w-full px-4 py-2`}>
 
-            <div className={`flex flex-col justify-start w-full p-4 gap-2 pb-12 bg-skin-theme-body-50`}>
+            <div className={`flex flex-col justify-start w-full gap-2 pb-12 bg-skin-theme-body-50`}>
                 <h1 className={'text-3xl text-skin-theme-500 font-bold text-start'}>Color Theme</h1>
                 <p className={'text-sm text-skin-theme-font-50 font-semibold'}>Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. A accusantium dolor dolorem doloremque
