@@ -21,25 +21,25 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            <div className={'grid grid-cols-1 grid-rows-1 tablet:grid-cols-2 tablet:gap-8 gap-4 pt-4 py-6'}>
+            <div className={'grid grid-cols-1 grid-rows-1 tablet:grid-cols-2 tablet:gap-8 gap-4 pt-2 py-6'}>
                 <div
                     className={'bg-skin-theme-body-100 border border-skin-theme-body-900 rounded-sm text-skin-theme-font-50 mx-auto'}>
-                    <div className={'flex flex-col justify-start gap-4 px-4 py-4 max-w-screen-smPhone'}>
-                        <h2 className={'text-2xl text-skin-theme-400 font-semibold text-center'}>Starter</h2>
-                        <h3 className={'text-lg text-center mx-auto w-3/4'}>Best option for
+                    <div className={'flex flex-col justify-center gap-3 px-1 py-4 max-w-screen-smPhone'}>
+                        <h2 className={'text-2xl text-skin-theme-400 font-semibold text-center w-full px-12'}>Starter</h2>
+                        <h3 className={'text-lg text-center w-full px-12'}>Best option for
                             personal use & for your next project.</h3>
-                        <h1 className={'text-4xl text-skin-theme-400 font-bold text-center mb-2'}>$29<span
-                            className={'text-lg text-skin-theme-font-50'}> / month</span></h1>
+                        <h1 className={'text-4xl text-skin-theme-400 font-bold text-center mb-1'}>$29<span
+                            className={'text-lg text-skin-theme-font-400'}> / month</span></h1>
 
                         <div className={'flex flex-col gap-2 text-sm text-start pl-4'}>
-                            <p>Individual configuration</p>
-                            <p>No setup, or hidden fees</p>
-                            <p>Team size: <span>1 developer</span></p>
-                            <p>Premium support: <span>6 months</span></p>
-                            <p>Free updates: <span>6 months</span></p>
+                            <p> - Individual configuration</p>
+                            <p> - No setup, or hidden fees</p>
+                            <p> - Team size: <span>1 developer</span></p>
+                            <p> - Premium support: <span>6 months</span></p>
+                            <p> - Free updates: <span>6 months</span></p>
                         </div>
 
-                        <div className={'w-full flex flex-row justify-center items-center'}>
+                        <div className={'mt-4 w-full flex flex-row justify-center items-center'}>
                             <button
                                 className={'bg-skin-theme-400 w-48 h-12 text-lg rounded border-[1px] border-skin-theme-400/40 text-skin-theme-font-900 font-semibold'}>Get
                                 Started
@@ -51,21 +51,21 @@ export default function Home() {
 
                 <div
                     className={'bg-skin-theme-body-100 border border-skin-theme-body-900 rounded-sm text-skin-theme-font-50 mx-auto'}>
-                    <div className={'flex flex-col justify-start gap-4 px-4 py-4 max-w-screen-smPhone'}>
-                        <h2 className={'text-2xl text-skin-theme-400 font-semibold text-center'}>Enterprise</h2>
-                        <h3 className={'text-lg text-center mx-auto w-3/4'}>Best for large scale uses and extended redistribution rights.</h3>
-                        <h1 className={'text-4xl text-skin-theme-400 font-bold text-center mb-2'}>$249<span
-                            className={'text-lg text-skin-theme-font-50'}> / month</span></h1>
+                    <div className={'flex flex-col justify-center gap-3 px-1 py-4 max-w-screen-smPhone'}>
+                        <h2 className={'text-2xl text-skin-theme-400 font-semibold text-center w-full px-12'}>Enterprise</h2>
+                        <h3 className={'text-lg text-center w-full px-12'}>Best for large scale uses and extended redistribution rights.</h3>
+                        <h1 className={'text-4xl text-skin-theme-400 font-bold text-center mb-1'}>$249<span
+                            className={'text-lg text-skin-theme-font-400'}> / month</span></h1>
 
                         <div className={'flex flex-col gap-2 text-sm text-start pl-4'}>
-                            <p>Individual configuration</p>
-                            <p>No setup, or hidden fees</p>
-                            <p>Team size: <span>1 developer</span></p>
-                            <p>Premium support: <span>6 months</span></p>
-                            <p>Free updates: <span>6 months</span></p>
+                            <p> - Individual configuration</p>
+                            <p> - No setup, or hidden fees</p>
+                            <p> - Team size: <span>1 developer</span></p>
+                            <p> - Premium support: <span>6 months</span></p>
+                            <p> - Free updates: <span>6 months</span></p>
                         </div>
 
-                        <div className={'w-full flex flex-row justify-center items-center'}>
+                        <div className={'mt-4 w-full flex flex-row justify-center items-center'}>
                             <button
                                 className={'bg-skin-theme-400 w-48 h-12 text-lg rounded border-[1px] border-skin-theme-400/40 text-skin-theme-font-900 font-semibold'}>Get
                                 Started
