@@ -2,85 +2,10 @@ import {useEffect, useState} from "react";
 
 export default function Home() {
 
-    const [colorMode, setColorMode] = useState('fourth')
-    const [darkMode, setDarkMode] = useState('-dark')
-    const [theme, setTheme] = useState()
-
-    const handleColorMode = (color) => {
-        const value = color + darkMode
-        setColorMode(color)
-    }
-
-    const handleDarkMode = (mode) => {
-        const value = colorMode + mode
-        setDarkMode(mode)
-    }
-
-    useEffect(() => {
-
-        setTheme(`${colorMode + darkMode}`)
-
-    }, [colorMode, darkMode])
-
     return (
-        <div className={`${theme} mx-auto max-w-screen-tablet mx-auto flex flex-col justify-start mt-4 text-sm bg-skin-theme-body-800`}>
+        <div className={`mx-auto max-w-screen-tablet mx-auto flex flex-col justify-start px-4`}>
 
-            <div className={'flex flex-col px-4 justify-between gap-2 py-2 tablet:flex-row'}>
-
-                <div className="flex flex-row gap-2">
-                    <button
-                        onClick={() => {
-                            handleColorMode('root')
-                        }}
-                        className={`${darkMode === "-light" ? "root-light" : "root-dark"}  text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
-                        Root
-                    </button>
-
-                    <button
-                        onClick={() => {
-                            handleColorMode('second')
-                        }}
-                        className={`${darkMode === "-light" ? "second-light" : "second-dark"}  text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
-                        Second
-                    </button>
-
-                    <button
-                        onClick={() => {
-                            handleColorMode('third')
-                        }}
-                        className={`${darkMode === "-light" ? "third-light" : "third-dark"}  text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
-                        Third
-                    </button>
-
-                    <button
-                        onClick={() => {
-                            handleColorMode('fourth')
-                        }}
-                        className={`${darkMode === "-light" ? "fourth-light" : "fourth-dark"}  text-sm px-4 py-2 rounded text-skin-theme-500 bg-skin-theme-body-50 border border-skin-theme-500`}>
-                        Fourth
-                    </button>
-
-                </div>
-                <div className="flex flex-row gap-2">
-                    <button
-                        onClick={() => {
-                            handleDarkMode('-light')
-                        }}
-                        className={'root-light text-sm px-4 py-2 rounded text-skin-theme-font-50 bg-skin-theme-body-50 border border-skin-theme-body-900'}>
-                        Light
-                    </button>
-
-                    <button
-                        onClick={() => {
-                            handleDarkMode('-dark')
-                        }}
-                        className={'root-dark text-sm px-4 py-2 rounded text-skin-theme-font-50 bg-skin-theme-body-50 border border-skin-theme-body-900'}>
-                        Dark
-                    </button>
-                </div>
-
-            </div>
-            <div className={`flex flex-col justify-start w-full bg-skin-theme-body-50 px-4 p-4 gap-2 pb-12 bg-skin-theme-body-50`}>
+            <div className={`flex flex-col justify-start w-full p-4 gap-2 pb-12 bg-skin-theme-body-100`}>
                 <h1 className={'text-3xl text-skin-theme-400 font-bold text-start'}>Color Theme</h1>
                 <p className={'text-sm text-skin-theme-font-50 font-semibold'}>Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. A accusantium dolor dolorem doloremque
@@ -96,9 +21,9 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            <div className={'grid grid-cols-1 grid-rows-1 tablet:grid-cols-2 tablet:gap-8 gap-4 pt-4 bg-skin-theme-body-50 px-4 py-8'}>
+            <div className={'grid grid-cols-1 grid-rows-1 tablet:grid-cols-2 tablet:gap-8 gap-4 pt-4 py-6'}>
                 <div
-                    className={'bg-skin-theme-body-50 border border-skin-theme-body-900 rounded-sm text-skin-theme-font-50 mx-auto'}>
+                    className={'bg-skin-theme-body-100 border border-skin-theme-body-900 rounded-sm text-skin-theme-font-50 mx-auto'}>
                     <div className={'flex flex-col justify-start gap-4 px-4 py-4 max-w-screen-smPhone'}>
                         <h2 className={'text-2xl text-skin-theme-400 font-semibold text-center'}>Starter</h2>
                         <h3 className={'text-lg text-center mx-auto w-3/4'}>Best option for
@@ -125,7 +50,7 @@ export default function Home() {
                 </div>
 
                 <div
-                    className={'bg-skin-theme-body-50 border border-skin-theme-body-900 rounded-sm text-skin-theme-font-50 mx-auto'}>
+                    className={'bg-skin-theme-body-100 border border-skin-theme-body-900 rounded-sm text-skin-theme-font-50 mx-auto'}>
                     <div className={'flex flex-col justify-start gap-4 px-4 py-4 max-w-screen-smPhone'}>
                         <h2 className={'text-2xl text-skin-theme-400 font-semibold text-center'}>Enterprise</h2>
                         <h3 className={'text-lg text-center mx-auto w-3/4'}>Best for large scale uses and extended redistribution rights.</h3>
@@ -155,8 +80,3 @@ export default function Home() {
     )
 }
 
-
-/*
-
-
-* */

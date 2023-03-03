@@ -41,6 +41,7 @@ module.exports = {
           'theme-800' : withOpacity('--theme-800'),
           'theme-900' : withOpacity('--theme-900'),
 
+
           'theme-body-50' : withOpacity('--theme-body-50'),
           'theme-body-100' : withOpacity('--theme-body-100'),
           'theme-body-200' : withOpacity('--theme-body-200'),
@@ -51,6 +52,8 @@ module.exports = {
           'theme-body-700' : withOpacity('--theme-body-700'),
           'theme-body-800' : withOpacity('--theme-body-800'),
           'theme-body-900' : withOpacity('--theme-body-900'),
+          'theme-body-1000' : withOpacity('--theme-body-1000'),
+
 
           'theme-font-50' : withOpacity('--theme-font-50'),
           'theme-font-100' : withOpacity('--theme-font-100'),
@@ -62,6 +65,7 @@ module.exports = {
           'theme-font-700' : withOpacity('--theme-font-700'),
           'theme-font-800' : withOpacity('--theme-font-800'),
           'theme-font-900' : withOpacity('--theme-font-900'),
+          'theme-font-1000' : withOpacity('--theme-font-1000'),
         }
       }
     },

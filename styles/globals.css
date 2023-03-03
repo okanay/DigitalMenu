@@ -17,17 +17,43 @@
         /*@apply transition-colors duration-500;*/
     }
 
-    .common-dark {
-        --theme-body-50: 20, 20, 20;
-        --theme-body-100: 56, 56, 56;
-        --theme-body-200: 67, 67, 67;
-        --theme-body-300: 81, 81, 81;
-        --theme-body-400: 102, 102, 102;
+    .-light {
+        --theme-body-50: 255, 255, 255;
+        --theme-body-100: 247, 247, 247;
+        --theme-body-200: 227, 227, 227;
+        --theme-body-300: 200, 200, 200;
+        --theme-body-400: 164, 164, 164;
         --theme-body-500: 129, 129, 129;
-        --theme-body-600: 164, 164, 164;
+        --theme-body-600: 102, 102, 102;
+        --theme-body-700: 81, 81, 81;
+        --theme-body-800: 67, 67, 67;
+        --theme-body-900: 56, 56, 56;
+        --theme-body-1000: 5, 5, 5;
+
+        --theme-font-1000: 255, 255, 255;
+        --theme-font-900: 247, 247, 247;
+        --theme-font-800: 200, 200, 200;
+        --theme-font-700: 164, 164, 164;
+        --theme-font-600: 129, 129, 129;
+        --theme-font-500: 102, 102, 102;
+        --theme-font-400: 81, 81, 81;
+        --theme-font-300: 67, 67, 67;
+        --theme-font-200: 56, 56, 56;
+        --theme-font-100: 20, 20, 20;
+        --theme-font-50: 5, 5, 5;
+    }
+    .-dark {
+        --theme-body-1000: 255, 255, 255;
+        --theme-body-900: 247, 247, 247;
+        --theme-body-800: 227, 227, 227;
         --theme-body-700: 200, 200, 200;
-        --theme-body-800: 247, 247, 247;
-        --theme-body-900: 255, 255, 255;
+        --theme-body-600: 164, 164, 164;
+        --theme-body-500: 129, 129, 129;
+        --theme-body-400: 102, 102, 102;
+        --theme-body-300: 81, 81, 81;
+        --theme-body-200: 67, 67, 67;
+        --theme-body-100: 56, 56, 56;
+        --theme-body-50: 5, 5, 5;
 
         --theme-font-50: 255, 255, 255;
         --theme-font-100: 247, 247, 247;
@@ -39,55 +65,10 @@
         --theme-font-700: 67, 67, 67;
         --theme-font-800: 56, 56, 56;
         --theme-font-900: 20, 20, 20;
-    }
-    .common-light {
-        --theme-body-50: 255, 255, 255;
-        --theme-body-100: 227, 227, 227;
-        --theme-body-200: 200, 200, 200;
-        --theme-body-300: 164, 164, 164;
-        --theme-body-400: 129, 129, 129;
-        --theme-body-500: 102, 102, 102;
-        --theme-body-600: 81, 81, 81;
-        --theme-body-700: 67, 67, 67;
-        --theme-body-800: 56, 56, 56;
-        --theme-body-900: 20, 20, 20;
-
-        --theme-font-50: 20, 20, 20;
-        --theme-font-100: 56, 56, 56;
-        --theme-font-200: 67, 67, 67;
-        --theme-font-300: 81, 81, 81;
-        --theme-font-400: 102, 102, 102;
-        --theme-font-500: 129, 129, 129;
-        --theme-font-600: 164, 164, 164;
-        --theme-font-700: 200, 200, 200;
-        --theme-font-800: 227, 227, 227;
-        --theme-font-900: 255, 255, 255;
+        --theme-font-1000: 5, 5, 5;
     }
 
     :root {
-
-        --theme-body-50: 255, 255, 255;
-        --theme-body-100: 227, 227, 227;
-        --theme-body-200: 200, 200, 200;
-        --theme-body-300: 164, 164, 164;
-        --theme-body-400: 129, 129, 129;
-        --theme-body-500: 102, 102, 102;
-        --theme-body-600: 81, 81, 81;
-        --theme-body-700: 67, 67, 67;
-        --theme-body-800: 56, 56, 56;
-        --theme-body-900: 20, 20, 20;
-
-        --theme-font-50: 20, 20, 20;
-        --theme-font-100: 56, 56, 56;
-        --theme-font-200: 67, 67, 67;
-        --theme-font-300: 81, 81, 81;
-        --theme-font-400: 102, 102, 102;
-        --theme-font-500: 129, 129, 129;
-        --theme-font-600: 164, 164, 164;
-        --theme-font-700: 200, 200, 200;
-        --theme-font-800: 227, 227, 227;
-        --theme-font-900: 255, 255, 255;
-
         --theme-50: 241, 249, 254;
         --theme-100: 226, 242, 252;
         --theme-200: 191, 229, 248;
@@ -100,29 +81,6 @@
         --theme-900: 19, 73, 103;
     }
     .root-light  {
-
-        --theme-body-50: 255, 255, 255;
-        --theme-body-100: 227, 227, 227;
-        --theme-body-200: 200, 200, 200;
-        --theme-body-300: 164, 164, 164;
-        --theme-body-400: 129, 129, 129;
-        --theme-body-500: 102, 102, 102;
-        --theme-body-600: 81, 81, 81;
-        --theme-body-700: 67, 67, 67;
-        --theme-body-800: 56, 56, 56;
-        --theme-body-900: 20, 20, 20;
-
-        --theme-font-50: 20, 20, 20;
-        --theme-font-100: 56, 56, 56;
-        --theme-font-200: 67, 67, 67;
-        --theme-font-300: 81, 81, 81;
-        --theme-font-400: 102, 102, 102;
-        --theme-font-500: 129, 129, 129;
-        --theme-font-600: 164, 164, 164;
-        --theme-font-700: 200, 200, 200;
-        --theme-font-800: 227, 227, 227;
-        --theme-font-900: 255, 255, 255;
-
         --theme-50: 241, 249, 254;
         --theme-100: 226, 242, 252;
         --theme-200: 191, 229, 248;
@@ -135,29 +93,6 @@
         --theme-900: 19, 73, 103;
     }
     .root-dark {
-
-        --theme-body-50: 20, 20, 20;
-        --theme-body-100: 56, 56, 56;
-        --theme-body-200: 67, 67, 67;
-        --theme-body-300: 81, 81, 81;
-        --theme-body-400: 102, 102, 102;
-        --theme-body-500: 129, 129, 129;
-        --theme-body-600: 164, 164, 164;
-        --theme-body-700: 200, 200, 200;
-        --theme-body-800: 247, 247, 247;
-        --theme-body-900: 255, 255, 255;
-
-        --theme-font-50: 255, 255, 255;
-        --theme-font-100: 247, 247, 247;
-        --theme-font-200: 200, 200, 200;
-        --theme-font-300: 164, 164, 164;
-        --theme-font-400: 129, 129, 129;
-        --theme-font-500: 102, 102, 102;
-        --theme-font-600: 81, 81, 81;
-        --theme-font-700: 67, 67, 67;
-        --theme-font-800: 56, 56, 56;
-        --theme-font-900: 20, 20, 20;
-
         --theme-50: 19, 73, 103;
         --theme-100: 16, 87, 124;
         --theme-200: 15, 103, 149;
@@ -171,29 +106,6 @@
     }
 
     .second-light {
-
-        --theme-body-50: 255, 255, 255;
-        --theme-body-100: 227, 227, 227;
-        --theme-body-200: 200, 200, 200;
-        --theme-body-300: 164, 164, 164;
-        --theme-body-400: 129, 129, 129;
-        --theme-body-500: 102, 102, 102;
-        --theme-body-600: 81, 81, 81;
-        --theme-body-700: 67, 67, 67;
-        --theme-body-800: 56, 56, 56;
-        --theme-body-900: 20, 20, 20;
-
-        --theme-font-50: 20, 20, 20;
-        --theme-font-100: 56, 56, 56;
-        --theme-font-200: 67, 67, 67;
-        --theme-font-300: 81, 81, 81;
-        --theme-font-400: 102, 102, 102;
-        --theme-font-500: 129, 129, 129;
-        --theme-font-600: 164, 164, 164;
-        --theme-font-700: 200, 200, 200;
-        --theme-font-800: 227, 227, 227;
-        --theme-font-900: 255, 255, 255;
-
         --theme-50: 240, 253, 249;
         --theme-100: 203, 252, 238;
         --theme-200: 151, 248, 220;
@@ -206,29 +118,6 @@
         --theme-900: 18, 79, 69;
     }
     .second-dark {
-
-        --theme-body-50: 20, 20, 20;
-        --theme-body-100: 56, 56, 56;
-        --theme-body-200: 67, 67, 67;
-        --theme-body-300: 81, 81, 81;
-        --theme-body-400: 102, 102, 102;
-        --theme-body-500: 129, 129, 129;
-        --theme-body-600: 164, 164, 164;
-        --theme-body-700: 200, 200, 200;
-        --theme-body-800: 247, 247, 247;
-        --theme-body-900: 255, 255, 255;
-
-        --theme-font-50: 255, 255, 255;
-        --theme-font-100: 247, 247, 247;
-        --theme-font-200: 200, 200, 200;
-        --theme-font-300: 164, 164, 164;
-        --theme-font-400: 129, 129, 129;
-        --theme-font-500: 102, 102, 102;
-        --theme-font-600: 81, 81, 81;
-        --theme-font-700: 67, 67, 67;
-        --theme-font-800: 56, 56, 56;
-        --theme-font-900: 20, 20, 20;
-
         --theme-50: 18, 79, 69;
         --theme-100: 15, 96, 83;
         --theme-200: 13, 120, 102;
@@ -242,29 +131,6 @@
     }
 
     .third-light  {
-
-        --theme-body-50: 255, 255, 255;
-        --theme-body-100: 227, 227, 227;
-        --theme-body-200: 200, 200, 200;
-        --theme-body-300: 164, 164, 164;
-        --theme-body-400: 129, 129, 129;
-        --theme-body-500: 102, 102, 102;
-        --theme-body-600: 81, 81, 81;
-        --theme-body-700: 67, 67, 67;
-        --theme-body-800: 56, 56, 56;
-        --theme-body-900: 20, 20, 20;
-
-        --theme-font-50: 20, 20, 20;
-        --theme-font-100: 56, 56, 56;
-        --theme-font-200: 67, 67, 67;
-        --theme-font-300: 81, 81, 81;
-        --theme-font-400: 102, 102, 102;
-        --theme-font-500: 129, 129, 129;
-        --theme-font-600: 164, 164, 164;
-        --theme-font-700: 200, 200, 200;
-        --theme-font-800: 227, 227, 227;
-        --theme-font-900: 255, 255, 255;
-
         --theme-50: 255, 243, 253;
         --theme-100: 255, 230, 254;
         --theme-200: 255, 204, 251;
@@ -277,29 +143,6 @@
         --theme-900: 126, 17, 109;
     }
     .third-dark  {
-
-        --theme-body-50: 20, 20, 20;
-        --theme-body-100: 56, 56, 56;
-        --theme-body-200: 67, 67, 67;
-        --theme-body-300: 81, 81, 81;
-        --theme-body-400: 102, 102, 102;
-        --theme-body-500: 129, 129, 129;
-        --theme-body-600: 164, 164, 164;
-        --theme-body-700: 200, 200, 200;
-        --theme-body-800: 247, 247, 247;
-        --theme-body-900: 255, 255, 255;
-
-        --theme-font-50: 255, 255, 255;
-        --theme-font-100: 247, 247, 247;
-        --theme-font-200: 200, 200, 200;
-        --theme-font-300: 164, 164, 164;
-        --theme-font-400: 129, 129, 129;
-        --theme-font-500: 102, 102, 102;
-        --theme-font-600: 81, 81, 81;
-        --theme-font-700: 67, 67, 67;
-        --theme-font-800: 56, 56, 56;
-        --theme-font-900: 20, 20, 20;
-
         --theme-50: 126, 17, 109;
         --theme-100: 169, 15, 148;
         --theme-200: 189, 14, 167;
@@ -313,29 +156,6 @@
     }
 
     .fourth-light  {
-
-        --theme-body-50: 255, 255, 255;
-        --theme-body-100: 227, 227, 227;
-        --theme-body-200: 200, 200, 200;
-        --theme-body-300: 164, 164, 164;
-        --theme-body-400: 129, 129, 129;
-        --theme-body-500: 102, 102, 102;
-        --theme-body-600: 81, 81, 81;
-        --theme-body-700: 67, 67, 67;
-        --theme-body-800: 56, 56, 56;
-        --theme-body-900: 20, 20, 20;
-
-        --theme-font-50: 20, 20, 20;
-        --theme-font-100: 56, 56, 56;
-        --theme-font-200: 67, 67, 67;
-        --theme-font-300: 81, 81, 81;
-        --theme-font-400: 102, 102, 102;
-        --theme-font-500: 129, 129, 129;
-        --theme-font-600: 164, 164, 164;
-        --theme-font-700: 200, 200, 200;
-        --theme-font-800: 227, 227, 227;
-        --theme-font-900: 255, 255, 255;
-
         --theme-50: 255, 241, 243;
         --theme-100: 255, 227, 231;
         --theme-200: 255, 204, 214;
@@ -348,29 +168,6 @@
         --theme-900: 139, 16, 63;
     }
     .fourth-dark  {
-
-        --theme-body-50: 20, 20, 20;
-        --theme-body-100: 56, 56, 56;
-        --theme-body-200: 67, 67, 67;
-        --theme-body-300: 81, 81, 81;
-        --theme-body-400: 102, 102, 102;
-        --theme-body-500: 129, 129, 129;
-        --theme-body-600: 164, 164, 164;
-        --theme-body-700: 200, 200, 200;
-        --theme-body-800: 247, 247, 247;
-        --theme-body-900: 255, 255, 255;
-
-        --theme-font-50: 255, 255, 255;
-        --theme-font-100: 247, 247, 247;
-        --theme-font-200: 200, 200, 200;
-        --theme-font-300: 164, 164, 164;
-        --theme-font-400: 129, 129, 129;
-        --theme-font-500: 102, 102, 102;
-        --theme-font-600: 81, 81, 81;
-        --theme-font-700: 67, 67, 67;
-        --theme-font-800: 56, 56, 56;
-        --theme-font-900: 20, 20, 20;
-
         --theme-50: 139, 16, 63;
         --theme-100: 169, 15, 69;
         --theme-200: 194, 14, 71;
